@@ -79,7 +79,7 @@ Queue::Queue(){
 }
 Queue::~Queue(){
   // cout << "In destructor with queue size " << size << endl;
-  int iterate_amount = size; // iterate_amount is needed because dequeue() reduces size when it is called.
+  int iterate_amount = size; // we use iterate_amount because dequeue() reduces size when it is called
   for(int i=0; i<iterate_amount; i++){
     // cout << "On element " << i << endl;
     dequeue();
