@@ -31,14 +31,14 @@ void Queue::enqueue(int x){
     2. (may be) change head  when the queue is empty
     3. increase size
     */
-    cout << "Entering " << x << endl;
+    // cout << "Entering " << x << endl;
     if(headPtr == NULL){ // if queue is empty
       headPtr = new_node;
       tailPtr = new_node;
     }
     else{ // if queue isn't empty
       int test = headPtr -> get_value();
-      cout << "headPtr points to " << test << endl;
+      // cout << "headPtr points to " << test << endl;
       
       tailPtr -> set_next(new_node);
       tailPtr = new_node;
@@ -60,14 +60,14 @@ int Queue::dequeue(){
     if(size != 1){ // check if headPtr is already at the last node
       headPtr = headPtr -> get_next();
     }
-    test_val = headPtr -> get_value();
-    cout << "headPtr now points to " << test_val << endl;
+    // test_val = headPtr -> get_value();
+    // cout << "headPtr now points to " << test_val << "before deleting " << value << endl;
     
     delete t;
     size--;
     return value;
   }
-  cout<<"Empty queue";
+  cout << "Empty queue";
   return -1;
 }
 

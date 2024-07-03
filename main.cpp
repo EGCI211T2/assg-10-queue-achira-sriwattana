@@ -16,8 +16,8 @@ int main(int argc , char **argv) {
         else {
           q.enqueue(atoi(argv[i]));
         }
-        q.print_queue();
-        cout << endl;
+        // q.print_queue();
+        // cout << endl;
   }
   return 0;
 }
