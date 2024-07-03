@@ -1,7 +1,7 @@
 #ifndef node_h
 #define node_h
 class NODE{
-     int data;
+    int data;
     NODE *nextPtr;
 public:
     NODE(int);
@@ -35,7 +35,6 @@ void NODE::set_next(NODE *t){
 }
 NODE::~NODE(){
      cout<<"deleting "<<data<<endl;
-
 }
 
 
