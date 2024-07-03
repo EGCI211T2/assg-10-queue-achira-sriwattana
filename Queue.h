@@ -85,6 +85,12 @@ Queue::~Queue(){
     // cout << "On element " << i << endl;
     dequeue();
   }
+
+  /*
+  while(size > 0){
+    dequeue();
+  }
+  */
 }
 
 
