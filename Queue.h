@@ -63,6 +63,7 @@ int Queue::dequeue(){
     // test_val = headPtr -> get_value();
     // cout << "headPtr now points to " << test_val << "before deleting " << value << endl;
     
+    cout << "Dequeing/Deleting " << value << endl; // this line is here for easier output readability
     delete t;
     size--;
     return value;
@@ -78,7 +79,7 @@ Queue::Queue(){
     size = 0;
 }
 Queue::~Queue(){
-  // cout << "In destructor with queue size " << size << endl;
+  cout << "\nIn destructor with queue size " << size << ":\n";
   int iterate_amount = size; // we use iterate_amount because dequeue() reduces size when it is called
   for(int i=0; i<iterate_amount; i++){
     // cout << "On element " << i << endl;
